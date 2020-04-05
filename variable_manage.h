@@ -6,7 +6,7 @@
 
 extern char **environ;
 
-
+/* setenv */
 size_t _strlen(char *str);
 char **malloc_environ(char **environ, size_t size);
 char **realloc_environ(char **environ, size_t new_size);
@@ -16,5 +16,11 @@ char *write_variable(const char *name, const char *value, char *dest);
 int comp_string(char *str1, const char *str2);
 int _setenv(const char *name, const char *value, int overwrite);
 char **malloc_double(size_t size);
+
+/* unsetenv */
+size_t double_strlen(char **str);
+char **free_env_var(char **env, size_t position, size_t env_size);
+
+
 
 #endif

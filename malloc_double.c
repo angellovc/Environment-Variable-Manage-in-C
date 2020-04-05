@@ -1,5 +1,9 @@
 #include "variable_manage.h"
-
+/**
+ *malloc_double - malloc function for double pointers
+ *@size: size of your double
+ *Return: new double pointer initialized in null
+ */
 char **malloc_double(size_t size)
 {
 	char **new;
